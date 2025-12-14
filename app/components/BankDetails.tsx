@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import CustomSelect from "./CustomSelect";
 
@@ -40,7 +40,6 @@ export default function BankDetailsStep({
 
   return (
     <div className="space-y-6 sm:space-y-8 mb-16 sm:mb-16">
-    
       <CustomSelect
         label="Bank"
         placeholder="Select an option"
@@ -50,7 +49,6 @@ export default function BankDetailsStep({
         error={errors.bank}
       />
 
-    
       <div>
         <label className="block text-[#013941] font-semibold text-base sm:text-lg mb-3">
           Account number
@@ -77,7 +75,6 @@ export default function BankDetailsStep({
         )}
       </div>
 
-      {/* Account Name (Read-only) */}
       <div>
         <label className="block text-[#013941] font-semibold text-base sm:text-lg mb-3">
           Account name

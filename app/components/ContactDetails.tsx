@@ -96,7 +96,7 @@ export default function ContactDetailsStep({
         )}
       </div>
 
-      {/* Recipient Phone Number */}
+   
       <div>
         <label className="block text-[#0d3d3d] font-semibold text-base sm:text-lg mb-3">
           Recipient phone number
@@ -106,7 +106,7 @@ export default function ContactDetailsStep({
             errors.phoneNumber ? "border-red-400" : "border-gray-200"
           } rounded-full bg-white focus-within:border-[#013941] focus-within:ring-2 focus-within:ring-[#0d3d3d]/20 transition-all`}
         >
-          {/* Country Code Selector */}
+     
           <div className="relative flex-shrink-0" ref={dropdownRef}>
             <button
               onClick={(e) => {
@@ -132,10 +132,10 @@ export default function ContactDetailsStep({
               />
             </button>
 
-            {/* Dropdown Menu - WITH DEBUG STYLING */}
+         
             {showCountryDropdown && (
               <div
-                className="fixed z-[9999] bg-white border-2 border-gray-200 rounded-2xl shadow-2xl min-w-[240px] max-h-[300px] overflow-y-auto"
+                className="fixed z-9999 bg-white border-2 border-gray-200 rounded-2xl shadow-2xl min-w-[240px] max-h-[300px] overflow-y-auto"
                 style={{
                   top: dropdownRef.current
                     ? `${
@@ -173,7 +173,7 @@ export default function ContactDetailsStep({
             )}
           </div>
 
-          {/* Phone Number Input */}
+          
           <input
             type="tel"
             inputMode="numeric"

@@ -1,4 +1,3 @@
-// components/RecipientDetailsForm.tsx
 "use client";
 
 import React, { useState } from "react";
@@ -98,7 +97,6 @@ export default function RecipientDetailsForm() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-4 sm:p-6 md:p-8">
       <div className="w-full sm:w-lg max-w-2xl">
-        {/* Header */}
         <div className="flex items-center mb-10 sm:mb-12">
           <button
             onClick={handleBack}
@@ -115,7 +113,6 @@ export default function RecipientDetailsForm() {
           </h1>
         </div>
 
-        {/* Step Content */}
         {step === 1 ? (
           <BankDetailsStep
             bank={formData.bank}
@@ -149,7 +146,6 @@ export default function RecipientDetailsForm() {
           />
         )}
 
-        {/* Next Button */}
         <button
           onClick={handleNext}
           disabled={isLoadingAccount}
