@@ -107,7 +107,7 @@ export default function ContactDetailsStep({
           } rounded-full bg-white focus-within:border-[#013941] focus-within:ring-2 focus-within:ring-[#0d3d3d]/20 transition-all`}
         >
      
-          <div className="relative flex-shrink-0" ref={dropdownRef}>
+          <div className="relative shrink-0" ref={dropdownRef}>
             <button
               onClick={(e) => {
                 e.preventDefault();
@@ -117,13 +117,13 @@ export default function ContactDetailsStep({
                 );
                 setShowCountryDropdown(!showCountryDropdown);
               }}
-              className="flex items-center gap-2 px-4 sm:px-5 py-3.5 sm:py-4 bg-white hover:bg-gray-50 transition-colors border-r-2 border-gray-200 h-full rounded-l-full"
+              className="flex items-center gap-1 px-3 sm:px-5 py-3.5 sm:py-4 bg-white hover:bg-gray-50 transition-colors border-r-2 border-gray-200 h-full rounded-l-full"
               type="button"
             >
               <span className="text-gray-800 font-medium text-sm sm:text-base">
                 {countryCode}
               </span>
-              <CurrentFlag className="w-5 h-4 sm:w-6 sm:h-5 rounded-full" />
+              <CurrentFlag className="w-4 h-4 sm:w-6 sm:h-5 rounded-full" />
 
               <ChevronDown
                 className={`w-6 h-6 text-gray-600 transition-transform duration-200 ${
@@ -177,13 +177,13 @@ export default function ContactDetailsStep({
           <input
             type="tel"
             inputMode="numeric"
-            placeholder="000 - 000 - 00000"
+            placeholder="000 - 000 - 0000"
             value={formatPhoneNumber(phoneNumber)}
             onChange={(e) => {
               const cleaned = e.target.value.replace(/\D/g, "");
               onPhoneNumberChange(cleaned);
             }}
-            className="flex-1 px-4 sm:px-6 py-3.5 sm:py-4 bg-white text-gray-800 placeholder-gray-400 placeholder:text-[15px] focus:outline-none rounded-r-full"
+            className="flex-1 -ml-2 px-2 sm:px-6 py-3.5 sm:py-4 bg-white text-gray-800 placeholder-gray-400 placeholder:text-[13px] focus:outline-none rounded-r-full"
             maxLength={16}
           />
         </div>
